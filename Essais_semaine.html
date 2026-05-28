@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Essais – Semaine du 27 mai</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'DM Sans', sans-serif; background: #F4F3EF; min-height: 100vh; padding: 48px 32px; color: #1a1a1a; }
+  .page { max-width: 720px; margin: 0 auto; }
+  .header { margin-bottom: 36px; }
+  .header h1 { font-size: 26px; font-weight: 600; letter-spacing: -0.5px; color: #111; }
+  .header p { font-size: 13px; color: #888; margin-top: 4px; }
+  .legend { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #555; }
+  .legend-dot { width: 8px; height: 8px; border-radius: 50%; }
+  .card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04); }
+  .day-header { display: flex; align-items: center; gap: 10px; padding: 12px 24px; background: #F7F6F2; border-bottom: 1px solid #EBEBEB; }
+  .day-header span { font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #666; }
+  .day-dot { width: 6px; height: 6px; border-radius: 50%; background: #CCC; flex-shrink: 0; }
+  .row { display: grid; grid-template-columns: 90px 1fr auto; align-items: center; padding: 14px 24px; border-bottom: 1px solid #F0F0F0; gap: 16px; transition: background 0.15s; }
+  .row:last-child { border-bottom: none; }
+  .row:hover { background: #FAFAF8; }
+  .time { font-family: 'DM Mono', monospace; font-size: 13.5px; color: #999; }
+  .person-name { font-size: 17px; font-weight: 500; color: #111; }
+  .person-note { font-size: 13px; color: #AAA; margin-top: 2px; }
+  .person-note.warn { color: #C97A1A; }
+  .badge { display: inline-flex; align-items: center; padding: 5px 13px; border-radius: 20px; font-size: 13px; font-weight: 500; white-space: nowrap; }
+  .badge-commis { background: #EBF3FF; color: #2563EB; }
+  .badge-cdr { background: #EAFAF1; color: #16A34A; }
+  .badge-demichef { background: #FEFCE8; color: #CA8A04; }
+  .divider { height: 1px; background: #EBEBEB; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <h1>Essais — Semaine du 27 mai</h1>
+    <p>Planification des essais en salle</p>
+  </div>
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot" style="background:#2563EB"></div>Commis de salle</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#16A34A"></div>Chef de rang</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#CA8A04"></div>Demi-chef de rang</div>
+  </div>
+  <div class="card">
+
+    <div class="day-block">
+      <div class="day-header"><div class="day-dot"></div><span>Mercredi 27 mai</span></div>
+      <div class="row"><div class="time">9h30</div><div class="person"><div class="person-name">Sabrina</div></div><span class="badge badge-commis">Commis de salle</span></div>
+      <div class="row"><div class="time">12h00</div><div class="person"><div class="person-name">Sarah</div></div><span class="badge badge-commis">Commis de salle</span></div>
+      <div class="row"><div class="time">15h00</div><div class="person"><div class="person-name">Manon</div></div><span class="badge badge-commis">Commis de salle</span></div>
+      <div class="row"><div class="time">18h30</div><div class="person"><div class="person-name"><span style="text-decoration:line-through;color:#AAA;">Ethan</span> <span style="color:#DC2626;font-size:13px;font-weight:400;">(essai non concluant)</span></div></div><span class="badge badge-commis">Commis de salle</span></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="day-block">
+      <div class="day-header"><div class="day-dot"></div><span>Jeudi 28 mai</span></div>
+      <div class="row"><div class="time">9h30</div><div class="person"><div class="person-name">Inès</div><div class="person-note">CDD jusqu'au 15 sept · 15 jours d'essai</div></div><span class="badge badge-commis">Commis de salle</span></div>
+      <div class="row"><div class="time" style="color:#C97A1A;font-weight:500;">18h30</div><div class="person"><div class="person-name">Maël</div></div><span class="badge badge-cdr">Chef de rang</span></div>
+      <div class="row"><div class="time">9h30</div><div class="person"><div class="person-name">Dimitri</div></div><span class="badge badge-commis">Commis de salle</span></div>
+      <div class="row"><div class="time">15h00</div><div class="person"><div class="person-name">Sahbi</div></div><span class="badge badge-cdr">Chef de rang</span></div>
+      <div class="row"><div class="time">18h00</div><div class="person"><div class="person-name">Kenza</div><div class="person-note warn">⚠ Service du soir ? Voir avec Alex</div></div><span class="badge badge-commis">Commis de salle</span></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="day-block">
+      <div class="day-header"><div class="day-dot"></div><span>Vendredi 29 mai</span></div>
+      <div class="row"><div class="time">9h30</div><div class="person"><div class="person-name">Robin</div></div><span class="badge badge-cdr">Chef de rang</span></div>
+      <div class="row"><div class="time">11h00</div><div class="person"><div class="person-name">Nicolas</div></div><span class="badge badge-demichef">Demi-chef de rang</span></div>
+      <div class="row"><div class="time">11h30</div><div class="person"><div class="person-name">Wasel</div></div><span class="badge badge-cdr">Chef de rang</span></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="day-block">
+      <div class="day-header"><div class="day-dot"></div><span>Samedi 30 mai</span></div>
+      <div class="row"><div class="time">9h30</div><div class="person"><div class="person-name">Julie</div></div><span class="badge badge-cdr">Chef de rang</span></div>
+      <div class="row"><div class="time">À définir</div><div class="person"><div class="person-name">Louna</div><div class="person-note warn">⚠ Pas encore confirmé</div></div><span class="badge badge-cdr">Chef de rang</span></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="day-block">
+      <div class="day-header"><div class="day-dot"></div><span>Lundi 1er juin</span></div>
+      <div class="row"><div class="time">9h30</div><div class="person"><div class="person-name">Marianne</div><div class="person-note">Horaire mardi 15h</div></div><span class="badge badge-cdr">Chef de rang</span></div>
+      <div class="row"><div class="time">À définir</div><div class="person"><div class="person-name">Léna</div></div><span class="badge badge-demichef">Demi-chef de rang</span></div>
+      <div class="row"><div class="time">À définir</div><div class="person"><div class="person-name">Fabio</div></div><span class="badge badge-cdr">Chef de rang</span></div>
+      <div class="row"><div class="time">9h30</div><div class="person"><div class="person-name">Chloé</div></div><span class="badge badge-commis">Commis de salle</span></div>
+      <div class="row"><div class="time">12h00</div><div class="person"><div class="person-name">Denzel</div><div class="person-note">CDD jusqu'au 15 sept · 15 jours d'essai</div></div><span class="badge badge-commis">Commis de salle</span></div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
