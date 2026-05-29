@@ -26,6 +26,7 @@
   .person-name { font-size: 17px; font-weight: 500; color: #111; }
   .person-note { font-size: 13px; color: #AAA; margin-top: 2px; }
   .person-note.warn { color: #C97A1A; }
+  .person-note.success { color: #16A34A; }
   .badge { display: inline-flex; align-items: center; padding: 5px 13px; border-radius: 20px; font-size: 13px; font-weight: 500; white-space: nowrap; }
   .badge-commis { background: #EBF3FF; color: #2563EB; }
   .badge-cdr { background: #EAFAF1; color: #16A34A; }
@@ -48,9 +49,9 @@
 
     <div class="day-block">
       <div class="day-header"><div class="day-dot"></div><span>Mercredi 27 mai</span></div>
-      <div class="row"><div class="time">9h30</div><div class="person"><div class="person-name">Sabrina</div></div><span class="badge badge-commis">Commis de salle</span></div>
-      <div class="row"><div class="time">12h00</div><div class="person"><div class="person-name">Sarah</div></div><span class="badge badge-commis">Commis de salle</span></div>
-      <div class="row"><div class="time">15h00</div><div class="person"><div class="person-name">Manon</div></div><span class="badge badge-commis">Commis de salle</span></div>
+      <div class="row"><div class="time">9h30</div><div class="person"><div class="person-name" style="color:#16A34A;">Sabrina</div><div class="person-note success">✓ Validé</div></div><span class="badge badge-commis">Commis de salle</span></div>
+      <div class="row"><div class="time">12h00</div><div class="person"><div class="person-name" style="color:#16A34A;">Sarah</div><div class="person-note success">✓ Validé</div></div><span class="badge badge-commis">Commis de salle</span></div>
+      <div class="row"><div class="time">15h00</div><div class="person"><div class="person-name" style="color:#16A34A;">Manon</div><div class="person-note success">✓ Validé</div></div><span class="badge badge-commis">Commis de salle</span></div>
       <div class="row"><div class="time">18h30</div><div class="person"><div class="person-name"><span style="text-decoration:line-through;color:#AAA;">Ethan</span> <span style="color:#DC2626;font-size:13px;font-weight:400;">(essai non concluant)</span></div></div><span class="badge badge-commis">Commis de salle</span></div>
     </div>
 
@@ -58,11 +59,11 @@
 
     <div class="day-block">
       <div class="day-header"><div class="day-dot"></div><span>Jeudi 28 mai</span></div>
-      <div class="row"><div class="time">9h30</div><div class="person"><div class="person-name">Inès</div><div class="person-note">CDD jusqu'au 15 sept · 15 jours d'essai</div></div><span class="badge badge-commis">Commis de salle</span></div>
-      <div class="row"><div class="time" style="color:#C97A1A;font-weight:500;">18h30</div><div class="person"><div class="person-name">Maël</div></div><span class="badge badge-cdr">Chef de rang</span></div>
-      <div class="row"><div class="time">9h30</div><div class="person"><div class="person-name">Dimitri</div></div><span class="badge badge-commis">Commis de salle</span></div>
-      <div class="row"><div class="time">15h00</div><div class="person"><div class="person-name">Sahbi</div></div><span class="badge badge-cdr">Chef de rang</span></div>
-      <div class="row"><div class="time">18h00</div><div class="person"><div class="person-name">Kenza</div><div class="person-note warn">⚠ Service du soir ? Voir avec Alex</div></div><span class="badge badge-commis">Commis de salle</span></div>
+      <div class="row"><div class="time">9h30</div><div class="person"><div class="person-name" style="color:#16A34A;">Inès</div><div class="person-note">CDD jusqu'au 15 sept · 15 jours d'essai</div><div class="person-note success">✓ Validé</div></div><span class="badge badge-commis">Commis de salle</span></div>
+      <div class="row"><div class="time" style="color:#C97A1A;font-weight:500;">18h30</div><div class="person"><div class="person-name"><span style="text-decoration:line-through;color:#AAA;">Maël</span> <span style="color:#DC2626;font-size:13px;font-weight:400;">(en retard)</span></div></div><span class="badge badge-cdr">Chef de rang</span></div>
+      <div class="row"><div class="time">9h30</div><div class="person"><div class="person-name" style="color:#16A34A;">Dimitri</div><div class="person-note success">✓ Validé</div></div><span class="badge badge-commis">Commis de salle</span></div>
+      <div class="row"><div class="time">15h00</div><div class="person"><div class="person-name" style="color:#16A34A;">Sahbi</div><div class="person-note success">✓ Validé</div></div><span class="badge badge-cdr">Chef de rang</span></div>
+      <div class="row"><div class="time">18h00</div><div class="person"><div class="person-name"><span style="text-decoration:line-through;color:#AAA;">Kenza</span> <span style="color:#DC2626;font-size:13px;font-weight:400;">(essai non concluant)</span></div></div><span class="badge badge-commis">Commis de salle</span></div>
     </div>
 
     <div class="divider"></div>
@@ -72,7 +73,6 @@
       <div class="row"><div class="time">9h30</div><div class="person"><div class="person-name">Robin</div></div><span class="badge badge-cdr">Chef de rang</span></div>
       <div class="row"><div class="time">11h00</div><div class="person"><div class="person-name">Nicolas</div></div><span class="badge badge-demichef">Demi-chef de rang</span></div>
       <div class="row"><div class="time">11h30</div><div class="person"><div class="person-name">Wasel</div></div><span class="badge badge-cdr">Chef de rang</span></div>
-      <div class="row"><div class="time">11h30</div><div class="person"><div class="person-name">Erwan</div></div><span class="badge badge-commis">Commis de salle</span></div>
     </div>
 
     <div class="divider"></div>
